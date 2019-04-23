@@ -164,9 +164,9 @@ add_dependencies(costmap_converter ${PROJECT_NAME}_gencfg)
 add_dependencies(costmap_converter ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Declare a cpp executable
-add_executable(standalone_converter src/costmap_converter_node.cpp)
-target_link_libraries(standalone_converter ${catkin_LIBRARIES} )
-add_dependencies(standalone_converter costmap_converter)
+#add_executable(standalone_converter src/costmap_converter_node.cpp)
+#target_link_libraries(standalone_converter ${catkin_LIBRARIES} )
+#add_dependencies(standalone_converter costmap_converter)
   
 # (un)set: cmake -DCVV_DEBUG_MODE=OFF ..
 option(CVV_DEBUG_MODE "cvvisual-debug-mode" ON)
@@ -196,9 +196,9 @@ endif()
 install(TARGETS costmap_converter
    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
-install(TARGETS standalone_converter
-   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+#install(TARGETS standalone_converter
+#  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+#)
 
 ## Mark cpp header files for installation
 install(DIRECTORY include/${PROJECT_NAME}/

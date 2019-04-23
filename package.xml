@@ -32,7 +32,7 @@
   <depend>cv_bridge</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
-  <export>
+  <!-- <export>
     <costmap_converter plugin="${prefix}/plugins.xml" />
-  </export>
+  </export> -->
 </package>

@@ -41,13 +41,14 @@
 #include <boost/thread/mutex.hpp>
 #include <pluginlib/class_list_macros.h>
 
-PLUGINLIB_EXPORT_CLASS(costmap_converter::CostmapToPolygonsDBSMCCH, costmap_converter::BaseCostmapToPolygons)
+// PLUGINLIB_EXPORT_CLASS(costmap_converter::CostmapToPolygonsDBSMCCH, costmap_converter::BaseCostmapToPolygons)
 
 namespace costmap_converter
 {
     
 CostmapToPolygonsDBSMCCH::CostmapToPolygonsDBSMCCH() : BaseCostmapToPolygons()
 {
+  ROS_INFO("CONSTRUCTOR CALLED                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
   costmap_ = NULL;
   dynamic_recfg_ = NULL;
 }
