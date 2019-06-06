@@ -69,10 +69,10 @@ public:
  
       ROS_INFO_STREAM("Standalone costmap converter:" << converter_plugin << " loaded.");
 
-      std::string costmap_topic = "/move_base/local_costmap/costmap";
+      std::string costmap_topic = "/move_base_flex/local_costmap/costmap";
       n_.param("costmap_topic", costmap_topic, costmap_topic);
 
-      std::string costmap_update_topic = "/move_base/local_costmap/costmap_updates";
+      std::string costmap_update_topic = "/move_base_flex/local_costmap/costmap_updates";
       n_.param("costmap_update_topic", costmap_update_topic, costmap_update_topic);
 
       std::string obstacles_topic = "costmap_obstacles";
