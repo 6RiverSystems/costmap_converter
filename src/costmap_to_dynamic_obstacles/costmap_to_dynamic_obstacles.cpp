@@ -1,6 +1,6 @@
 #include <costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h>
 
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 #include <tf/tf.h>
 
 PLUGINLIB_EXPORT_CLASS(costmap_converter::CostmapToDynamicObstacles, costmap_converter::BaseCostmapToPolygons)

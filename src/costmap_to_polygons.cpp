@@ -39,7 +39,7 @@
 #include <costmap_converter/costmap_to_polygons.h>
 #include <boost/thread.hpp>
 #include <boost/thread/mutex.hpp>
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 // PLUGINLIB_EXPORT_CLASS(costmap_converter::CostmapToPolygonsDBSMCCH, costmap_converter::BaseCostmapToPolygons)
 

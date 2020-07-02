@@ -44,7 +44,7 @@
 #include <visualization_msgs/Marker.h>
 
 #include <costmap_converter/costmap_converter_interface.h>
-#include <pluginlib/class_loader.h>
+#include <pluginlib/class_loader.hpp>
 
 
 
